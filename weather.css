@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.search button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #4facfe;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 120px;
+}
+
+.temp {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.city {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.details {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 40px;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    .weather-icon {
+        width: 100px;
+    }
+
+    .temp {
+        font-size: 38px;
+    }
+
+    .city {
+        font-size: 25px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .col {
+        justify-content: flex-start;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+.weather{
+    display: none;
+}
